@@ -1,0 +1,9 @@
+{
+  "dataset": "weather",
+  "pred_len": 96,
+  "best_lambda_val": 100.0,
+  "test_mse": 0.2284930398802541,
+  "test_mae": 0.30363009327902085,
+  "best_model_path": "results/lambda_search_models/weather_96_100.0.pth",
+  "timestamp": "2025-07-28T01:40:15.816647"
+}

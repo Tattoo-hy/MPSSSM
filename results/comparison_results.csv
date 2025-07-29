@@ -1,0 +1,7 @@
+Dataset,Type,Avg_MSE,Avg_MAE,Avg_Impulse_Degrad,Avg_Spurious_Degrad,Avg_Total_Degrad
+ETTh1,ETT,0.7542,0.6355,10.38%,44.70%,27.54%
+ETTh2,ETT,0.4613,0.4907,98.50%,56.12%,77.31%
+ETTm1,ETT,0.6575,0.5752,52.60%,59.13%,55.86%
+ETTm2,ETT,0.3681,0.4443,351.55%,238.25%,294.90%
+traffic,Traffic,0.6718,0.3860,-0.00%,0.01%,0.00%
+weather,Weather,0.3096,0.3608,232.43%,206.50%,219.47%

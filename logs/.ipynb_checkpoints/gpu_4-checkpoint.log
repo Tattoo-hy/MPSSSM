@@ -1,0 +1,29 @@
+--- Starting experiment at 2025-07-26T06:43:01.533444 ---
+Dataset: ETTh1, Pred_Len: 96, Lambda: 0.1, Mode: lambda_search
+
+
+--- AN ERROR OCCURRED: 2025-07-26T06:43:01.591648 ---
+Traceback (most recent call last):
+  File "/inspire/hdd/project/ai4education/liujiayi-p-liujiayi/mpsssm/run_experiment.py", line 132, in run
+    train_loader, val_loader, test_loader = self.load_data()
+                                            ^^^^^^^^^^^^^^^^
+  File "/inspire/hdd/project/ai4education/liujiayi-p-liujiayi/mpsssm/run_experiment.py", line 67, in load_data
+    val_loader = get_dataloader(data_config, mode='val')
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/inspire/hdd/project/ai4education/liujiayi-p-liujiayi/mpsssm/data_provider/data_loader.py", line 172, in get_dataloader
+    dataset = TimeSeriesDataset(
+              ^^^^^^^^^^^^^^^^^^
+  File "/inspire/hdd/project/ai4education/liujiayi-p-liujiayi/mpsssm/data_provider/data_loader.py", line 44, in __init__
+    self._read_data()
+  File "/inspire/hdd/project/ai4education/liujiayi-p-liujiayi/mpsssm/data_provider/data_loader.py", line 94, in _read_data
+    self._load_scaler_params()
+  File "/inspire/hdd/project/ai4education/liujiayi-p-liujiayi/mpsssm/data_provider/data_loader.py", line 111, in _load_scaler_params
+    self.scaler.mean_ = params['mean']
+                        ~~~~~~^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/numpy/lib/npyio.py", line 251, in __getitem__
+    bytes = self.zip.open(key)
+            ^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/zipfile.py", line 1581, in open
+    raise BadZipFile("Truncated file header")
+zipfile.BadZipFile: Truncated file header
+

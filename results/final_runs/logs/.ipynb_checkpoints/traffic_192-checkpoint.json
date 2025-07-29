@@ -1,0 +1,9 @@
+{
+  "dataset": "traffic",
+  "pred_len": 192,
+  "best_lambda_val": 5.0,
+  "test_mse": 0.660532117285034,
+  "test_mae": 0.380100373088986,
+  "best_model_path": "results/lambda_search_models/traffic_192_5.0.pth",
+  "timestamp": "2025-07-28T01:40:28.982549"
+}

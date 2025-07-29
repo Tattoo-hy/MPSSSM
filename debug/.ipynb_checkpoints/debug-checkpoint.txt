@@ -1,0 +1,12 @@
+1.第一个bug是模型实现脚本中115行
+# Discretize A and B
+        deltaA = torch.exp(delta.unsqueeze(-1) * A.unsqueeze(0).unsqueeze(0))  # (batch, seq_len, d_inner, d_state)
+        deltaB = delta.unsqueeze(-1) * B.unsqueeze(2)  # (batch, seq_len, d_inner, d_state)
+        扩展位置改为2
+2.预测目标列表索引改为6，因为数据集会把日期删除
+3.模型实现脚本中line 281
+# Store hidden states from each layer (after layer norm, with d_model dimension)
+            all_hidden_states.append(hidden)
+         修改all_hidden_states.append(ssm_hidden)  # 错误：维度是1024为all_hidden_states.append(hidden)  # 正确：维度是512
+4.修改run_experiments.py 中cuda:0
+

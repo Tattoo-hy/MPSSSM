@@ -1,0 +1,291 @@
+nohup: ignoring input
+==============================================
+MPS-SSM Sequential Multivariate Pipeline
+==============================================
+Datasets: ETT (4), Weather (1), Traffic (1)
+Each dataset config will run sequentially.
+Using up to  GPUs for each run.
+==============================================
+Checking GPU availability...
+index, name, memory.free [MiB]
+0, NVIDIA GeForce RTX 4090, 48628 MiB
+1, NVIDIA GeForce RTX 4090, 48628 MiB
+2, NVIDIA GeForce RTX 4090, 48628 MiB
+3, NVIDIA GeForce RTX 4090, 48628 MiB
+4, NVIDIA GeForce RTX 4090, 48628 MiB
+5, NVIDIA GeForce RTX 4090, 48628 MiB
+6, NVIDIA GeForce RTX 4090, 48628 MiB
+7, NVIDIA GeForce RTX 4090, 48628 MiB
+
+Setting up result directories...
+
+==============================================
+Stage 1: Lambda Search (with model saving)
+==============================================
+>>> Starting Lambda Search for ETT datasets...
+Total experiments to run: 128
+Starting dynamic scheduler...
+Dispatching to free GPU 0: ETTh1, len=96, lambda=0.01
+Dispatching to free GPU 1: ETTh1, len=96, lambda=0.1
+Dispatching to free GPU 2: ETTh1, len=96, lambda=1.0
+Dispatching to free GPU 3: ETTh1, len=96, lambda=2.0
+Dispatching to free GPU 4: ETTh1, len=96, lambda=5.0
+Dispatching to free GPU 5: ETTh1, len=96, lambda=10.0
+Dispatching to free GPU 6: ETTh1, len=96, lambda=50.0
+Dispatching to free GPU 7: ETTh1, len=96, lambda=100.0
+Dispatching to free GPU 4: ETTh1, len=192, lambda=0.01
+Dispatching to free GPU 7: ETTh1, len=192, lambda=0.1
+Dispatching to free GPU 0: ETTh1, len=192, lambda=1.0
+Dispatching to free GPU 1: ETTh1, len=192, lambda=2.0
+Dispatching to free GPU 3: ETTh1, len=192, lambda=5.0
+Dispatching to free GPU 5: ETTh1, len=192, lambda=10.0
+Dispatching to free GPU 2: ETTh1, len=192, lambda=50.0
+Dispatching to free GPU 4: ETTh1, len=192, lambda=100.0
+Dispatching to free GPU 6: ETTh1, len=336, lambda=0.01
+Dispatching to free GPU 3: ETTh1, len=336, lambda=0.1
+Dispatching to free GPU 0: ETTh1, len=336, lambda=1.0
+Dispatching to free GPU 1: ETTh1, len=336, lambda=2.0
+Dispatching to free GPU 2: ETTh1, len=336, lambda=5.0
+Dispatching to free GPU 7: ETTh1, len=336, lambda=10.0
+Dispatching to free GPU 6: ETTh1, len=336, lambda=50.0
+Dispatching to free GPU 4: ETTh1, len=336, lambda=100.0
+Dispatching to free GPU 0: ETTh1, len=720, lambda=0.01
+Dispatching to free GPU 3: ETTh1, len=720, lambda=0.1
+Dispatching to free GPU 5: ETTh1, len=720, lambda=1.0
+Dispatching to free GPU 1: ETTh1, len=720, lambda=2.0
+Dispatching to free GPU 2: ETTh1, len=720, lambda=5.0
+Dispatching to free GPU 7: ETTh1, len=720, lambda=10.0
+Dispatching to free GPU 6: ETTh1, len=720, lambda=50.0
+Dispatching to free GPU 0: ETTh1, len=720, lambda=100.0
+Dispatching to free GPU 1: ETTh2, len=96, lambda=0.01
+Dispatching to free GPU 5: ETTh2, len=96, lambda=0.1
+Dispatching to free GPU 7: ETTh2, len=96, lambda=1.0
+Dispatching to free GPU 3: ETTh2, len=96, lambda=2.0
+Dispatching to free GPU 4: ETTh2, len=96, lambda=5.0
+Dispatching to free GPU 1: ETTh2, len=96, lambda=10.0
+Dispatching to free GPU 6: ETTh2, len=96, lambda=50.0
+Dispatching to free GPU 7: ETTh2, len=96, lambda=100.0
+Dispatching to free GPU 5: ETTh2, len=192, lambda=0.01
+Dispatching to free GPU 0: ETTh2, len=192, lambda=0.1
+Dispatching to free GPU 3: ETTh2, len=192, lambda=1.0
+Dispatching to free GPU 4: ETTh2, len=192, lambda=2.0
+Dispatching to free GPU 1: ETTh2, len=192, lambda=5.0
+Dispatching to free GPU 2: ETTh2, len=192, lambda=10.0
+Dispatching to free GPU 6: ETTh2, len=192, lambda=50.0
+Dispatching to free GPU 7: ETTh2, len=192, lambda=100.0
+Dispatching to free GPU 0: ETTh2, len=336, lambda=0.01
+Dispatching to free GPU 3: ETTh2, len=336, lambda=0.1
+Dispatching to free GPU 4: ETTh2, len=336, lambda=1.0
+Dispatching to free GPU 1: ETTh2, len=336, lambda=2.0
+Dispatching to free GPU 2: ETTh2, len=336, lambda=5.0
+Dispatching to free GPU 5: ETTh2, len=336, lambda=10.0
+Dispatching to free GPU 7: ETTh2, len=336, lambda=50.0
+Dispatching to free GPU 0: ETTh2, len=336, lambda=100.0
+Dispatching to free GPU 3: ETTh2, len=720, lambda=0.01
+Dispatching to free GPU 6: ETTh2, len=720, lambda=0.1
+Dispatching to free GPU 1: ETTh2, len=720, lambda=1.0
+Dispatching to free GPU 5: ETTh2, len=720, lambda=2.0
+Dispatching to free GPU 7: ETTh2, len=720, lambda=5.0
+Dispatching to free GPU 3: ETTh2, len=720, lambda=10.0
+Dispatching to free GPU 4: ETTh2, len=720, lambda=50.0
+Dispatching to free GPU 2: ETTh2, len=720, lambda=100.0
+Dispatching to free GPU 6: ETTm1, len=96, lambda=0.01
+Dispatching to free GPU 0: ETTm1, len=96, lambda=0.1
+Dispatching to free GPU 5: ETTm1, len=96, lambda=1.0
+Dispatching to free GPU 1: ETTm1, len=96, lambda=2.0
+Dispatching to free GPU 3: ETTm1, len=96, lambda=5.0
+Dispatching to free GPU 4: ETTm1, len=96, lambda=10.0
+Dispatching to free GPU 2: ETTm1, len=96, lambda=50.0
+Dispatching to free GPU 7: ETTm1, len=96, lambda=100.0
+Dispatching to free GPU 6: ETTm1, len=192, lambda=0.01
+Dispatching to free GPU 5: ETTm1, len=192, lambda=0.1
+Dispatching to free GPU 1: ETTm1, len=192, lambda=1.0
+Dispatching to free GPU 0: ETTm1, len=192, lambda=2.0
+Dispatching to free GPU 2: ETTm1, len=192, lambda=5.0
+Dispatching to free GPU 4: ETTm1, len=192, lambda=10.0
+Dispatching to free GPU 7: ETTm1, len=192, lambda=50.0
+Dispatching to free GPU 3: ETTm1, len=192, lambda=100.0
+Dispatching to free GPU 5: ETTm1, len=336, lambda=0.01
+Dispatching to free GPU 1: ETTm1, len=336, lambda=0.1
+Dispatching to free GPU 6: ETTm1, len=336, lambda=1.0
+Dispatching to free GPU 4: ETTm1, len=336, lambda=2.0
+Dispatching to free GPU 2: ETTm1, len=336, lambda=5.0
+Dispatching to free GPU 0: ETTm1, len=336, lambda=10.0
+Dispatching to free GPU 3: ETTm1, len=336, lambda=50.0
+Dispatching to free GPU 7: ETTm1, len=336, lambda=100.0
+Dispatching to free GPU 6: ETTm1, len=720, lambda=0.01
+Dispatching to free GPU 1: ETTm1, len=720, lambda=0.1
+Dispatching to free GPU 5: ETTm1, len=720, lambda=1.0
+Dispatching to free GPU 4: ETTm1, len=720, lambda=2.0
+Dispatching to free GPU 3: ETTm1, len=720, lambda=5.0
+Dispatching to free GPU 6: ETTm1, len=720, lambda=10.0
+Dispatching to free GPU 0: ETTm1, len=720, lambda=50.0
+Dispatching to free GPU 1: ETTm1, len=720, lambda=100.0
+Dispatching to free GPU 2: ETTm2, len=96, lambda=0.01
+Dispatching to free GPU 7: ETTm2, len=96, lambda=0.1
+Dispatching to free GPU 5: ETTm2, len=96, lambda=1.0
+Dispatching to free GPU 0: ETTm2, len=96, lambda=2.0
+Dispatching to free GPU 1: ETTm2, len=96, lambda=5.0
+Dispatching to free GPU 3: ETTm2, len=96, lambda=10.0
+Dispatching to free GPU 2: ETTm2, len=96, lambda=50.0
+Dispatching to free GPU 6: ETTm2, len=96, lambda=100.0
+Dispatching to free GPU 4: ETTm2, len=192, lambda=0.01
+Dispatching to free GPU 7: ETTm2, len=192, lambda=0.1
+Dispatching to free GPU 5: ETTm2, len=192, lambda=1.0
+Dispatching to free GPU 3: ETTm2, len=192, lambda=2.0
+Dispatching to free GPU 6: ETTm2, len=192, lambda=5.0
+Dispatching to free GPU 7: ETTm2, len=192, lambda=10.0
+Dispatching to free GPU 0: ETTm2, len=192, lambda=50.0
+Dispatching to free GPU 4: ETTm2, len=192, lambda=100.0
+Dispatching to free GPU 1: ETTm2, len=336, lambda=0.01
+Dispatching to free GPU 5: ETTm2, len=336, lambda=0.1
+Dispatching to free GPU 2: ETTm2, len=336, lambda=1.0
+Dispatching to free GPU 6: ETTm2, len=336, lambda=2.0
+Dispatching to free GPU 7: ETTm2, len=336, lambda=5.0
+Dispatching to free GPU 1: ETTm2, len=336, lambda=10.0
+Dispatching to free GPU 2: ETTm2, len=336, lambda=50.0
+Dispatching to free GPU 0: ETTm2, len=336, lambda=100.0
+Dispatching to free GPU 4: ETTm2, len=720, lambda=0.01
+Dispatching to free GPU 3: ETTm2, len=720, lambda=0.1
+Dispatching to free GPU 6: ETTm2, len=720, lambda=1.0
+Dispatching to free GPU 5: ETTm2, len=720, lambda=2.0
+Dispatching to free GPU 7: ETTm2, len=720, lambda=5.0
+Dispatching to free GPU 2: ETTm2, len=720, lambda=10.0
+Dispatching to free GPU 0: ETTm2, len=720, lambda=50.0
+Dispatching to free GPU 1: ETTm2, len=720, lambda=100.0
+
+All experiments completed for mode: lambda_search
+>>> ETT lambda search completed.
+>>> Starting Lambda Search for Weather dataset...
+Total experiments to run: 32
+Starting dynamic scheduler...
+Dispatching to free GPU 0: weather, len=96, lambda=0.01
+Dispatching to free GPU 1: weather, len=96, lambda=0.1
+Dispatching to free GPU 2: weather, len=96, lambda=1.0
+Dispatching to free GPU 3: weather, len=96, lambda=2.0
+Dispatching to free GPU 4: weather, len=96, lambda=5.0
+Dispatching to free GPU 5: weather, len=96, lambda=10.0
+Dispatching to free GPU 6: weather, len=96, lambda=50.0
+Dispatching to free GPU 7: weather, len=96, lambda=100.0
+Dispatching to free GPU 0: weather, len=192, lambda=0.01
+Dispatching to free GPU 1: weather, len=192, lambda=0.1
+Dispatching to free GPU 2: weather, len=192, lambda=1.0
+Dispatching to free GPU 3: weather, len=192, lambda=2.0
+Dispatching to free GPU 4: weather, len=192, lambda=5.0
+Dispatching to free GPU 5: weather, len=192, lambda=10.0
+Dispatching to free GPU 6: weather, len=192, lambda=50.0
+Dispatching to free GPU 7: weather, len=192, lambda=100.0
+Dispatching to free GPU 0: weather, len=336, lambda=0.01
+Dispatching to free GPU 1: weather, len=336, lambda=0.1
+Dispatching to free GPU 2: weather, len=336, lambda=1.0
+Dispatching to free GPU 3: weather, len=336, lambda=2.0
+Dispatching to free GPU 4: weather, len=336, lambda=5.0
+Dispatching to free GPU 5: weather, len=336, lambda=10.0
+Dispatching to free GPU 6: weather, len=336, lambda=50.0
+Dispatching to free GPU 7: weather, len=336, lambda=100.0
+Dispatching to free GPU 0: weather, len=720, lambda=0.01
+Dispatching to free GPU 1: weather, len=720, lambda=0.1
+Dispatching to free GPU 2: weather, len=720, lambda=1.0
+Dispatching to free GPU 3: weather, len=720, lambda=2.0
+Dispatching to free GPU 4: weather, len=720, lambda=5.0
+Dispatching to free GPU 5: weather, len=720, lambda=10.0
+Dispatching to free GPU 6: weather, len=720, lambda=50.0
+Dispatching to free GPU 7: weather, len=720, lambda=100.0
+
+All experiments completed for mode: lambda_search
+>>> Weather lambda search completed.
+>>> Starting Lambda Search for Traffic dataset...
+Total experiments to run: 32
+Starting dynamic scheduler...
+Dispatching to free GPU 0: traffic, len=96, lambda=0.01
+Dispatching to free GPU 1: traffic, len=96, lambda=0.1
+Dispatching to free GPU 2: traffic, len=96, lambda=1.0
+Dispatching to free GPU 3: traffic, len=96, lambda=2.0
+Dispatching to free GPU 4: traffic, len=96, lambda=5.0
+Dispatching to free GPU 5: traffic, len=96, lambda=10.0
+Dispatching to free GPU 6: traffic, len=96, lambda=50.0
+Dispatching to free GPU 7: traffic, len=96, lambda=100.0
+Dispatching to free GPU 1: traffic, len=192, lambda=0.01
+Dispatching to free GPU 0: traffic, len=192, lambda=0.1
+Dispatching to free GPU 2: traffic, len=192, lambda=1.0
+Dispatching to free GPU 3: traffic, len=192, lambda=2.0
+Dispatching to free GPU 4: traffic, len=192, lambda=5.0
+Dispatching to free GPU 5: traffic, len=192, lambda=10.0
+Dispatching to free GPU 6: traffic, len=192, lambda=50.0
+Dispatching to free GPU 7: traffic, len=192, lambda=100.0
+Dispatching to free GPU 1: traffic, len=336, lambda=0.01
+Dispatching to free GPU 2: traffic, len=336, lambda=0.1
+Dispatching to free GPU 3: traffic, len=336, lambda=1.0
+Dispatching to free GPU 6: traffic, len=336, lambda=2.0
+Dispatching to free GPU 0: traffic, len=336, lambda=5.0
+Dispatching to free GPU 1: traffic, len=336, lambda=10.0
+Dispatching to free GPU 4: traffic, len=336, lambda=50.0
+Dispatching to free GPU 5: traffic, len=336, lambda=100.0
+Dispatching to free GPU 7: traffic, len=720, lambda=0.01
+Dispatching to free GPU 2: traffic, len=720, lambda=0.1
+Dispatching to free GPU 3: traffic, len=720, lambda=1.0
+Dispatching to free GPU 6: traffic, len=720, lambda=2.0
+Dispatching to free GPU 0: traffic, len=720, lambda=5.0
+Dispatching to free GPU 1: traffic, len=720, lambda=10.0
+Dispatching to free GPU 4: traffic, len=720, lambda=50.0
+Dispatching to free GPU 5: traffic, len=720, lambda=100.0
+
+All experiments completed for mode: lambda_search
+>>> Traffic lambda search completed.
+
+Stage 1 (Lambda Search) completed in 547 minutes and 8 seconds.
+
+==============================================
+Stage 2: Testing with Saved Models
+==============================================
+>>> Starting Testing for ETT datasets...
+Total experiments to run: 16
+Starting dynamic scheduler...
+Dispatching to free GPU 0: ETTh1, len=96, lambda=0.0
+Dispatching to free GPU 1: ETTh1, len=192, lambda=0.0
+Dispatching to free GPU 2: ETTh1, len=336, lambda=0.0
+Dispatching to free GPU 3: ETTh1, len=720, lambda=0.0
+Dispatching to free GPU 4: ETTh2, len=96, lambda=0.0
+Dispatching to free GPU 5: ETTh2, len=192, lambda=0.0
+Dispatching to free GPU 6: ETTh2, len=336, lambda=0.0
+Dispatching to free GPU 7: ETTh2, len=720, lambda=0.0
+Dispatching to free GPU 0: ETTm1, len=96, lambda=0.0
+Dispatching to free GPU 1: ETTm1, len=192, lambda=0.0
+Dispatching to free GPU 2: ETTm1, len=336, lambda=0.0
+Dispatching to free GPU 3: ETTm1, len=720, lambda=0.0
+Dispatching to free GPU 4: ETTm2, len=96, lambda=0.0
+Dispatching to free GPU 5: ETTm2, len=192, lambda=0.0
+Dispatching to free GPU 6: ETTm2, len=336, lambda=0.0
+Dispatching to free GPU 7: ETTm2, len=720, lambda=0.0
+
+All experiments completed for mode: test_only
+>>> ETT testing completed.
+>>> Starting Testing for Weather dataset...
+Total experiments to run: 4
+Starting dynamic scheduler...
+Dispatching to free GPU 0: weather, len=96, lambda=0.0
+Dispatching to free GPU 1: weather, len=192, lambda=0.0
+Dispatching to free GPU 2: weather, len=336, lambda=0.0
+Dispatching to free GPU 3: weather, len=720, lambda=0.0
+
+All experiments completed for mode: test_only
+>>> Weather testing completed.
+>>> Starting Testing for Traffic dataset...
+Total experiments to run: 4
+Starting dynamic scheduler...
+Dispatching to free GPU 0: traffic, len=96, lambda=0.0
+Dispatching to free GPU 1: traffic, len=192, lambda=0.0
+Dispatching to free GPU 2: traffic, len=336, lambda=0.0
+Dispatching to free GPU 3: traffic, len=720, lambda=0.0
+
+All experiments completed for mode: test_only
+>>> Traffic testing completed.
+
+Stage 2 (Testing) completed in 0 minutes and 47 seconds.
+
+==============================================
+Stage 3: Results Summarization
+==============================================
+Generating comprehensive result reports...
+python: can't open file '/inspire/hdd/project/ai4education/liujiayi-p-liujiayi/mpsssm/summarize_results.py': [Errno 2] No such file or directory
+Error: Results summarization failed!

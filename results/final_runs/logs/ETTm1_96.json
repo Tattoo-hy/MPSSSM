@@ -1,0 +1,15 @@
+{
+  "dataset": "ETTm1",
+  "pred_len": 96,
+  "best_lambda": 1.0,
+  "test_mse": 0.5387621741818622,
+  "test_mae": 0.5138160671072963,
+  "robustness": {
+    "impulse_mse": 0.74229627223118,
+    "impulse_degradation": 0.3777809723898948,
+    "spurious_mse": 0.77052582738124,
+    "spurious_degradation": 0.4301780345870098
+  },
+  "best_model_path": "results/lambda_search_models/ETTm1_96_1.0.pth",
+  "timestamp": "2025-07-28T02:35:07.527684"
+}

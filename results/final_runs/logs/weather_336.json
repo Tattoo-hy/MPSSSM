@@ -1,0 +1,15 @@
+{
+  "dataset": "weather",
+  "pred_len": 336,
+  "best_lambda": 50.0,
+  "test_mse": 0.31890098821241675,
+  "test_mae": 0.3663320271304508,
+  "robustness": {
+    "impulse_mse": 0.7532943890661027,
+    "impulse_degradation": 1.36215758781011,
+    "spurious_mse": 0.5204071717126504,
+    "spurious_degradation": 0.6318769491112783
+  },
+  "best_model_path": "results/lambda_search_models/weather_336_50.0.pth",
+  "timestamp": "2025-07-28T02:35:58.847444"
+}

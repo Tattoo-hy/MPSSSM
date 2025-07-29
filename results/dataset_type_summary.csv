@@ -1,0 +1,4 @@
+Dataset_Type,Num_Experiments,Avg_MSE,Avg_MAE,Avg_Impulse_Degrad,Avg_Spurious_Degrad,Avg_Robustness
+ETT,16,0.5603,0.5364,128.26%,99.55%,113.90%
+Traffic,4,0.6718,0.3860,-0.00%,0.01%,0.00%
+Weather,4,0.3096,0.3608,232.43%,206.50%,219.47%

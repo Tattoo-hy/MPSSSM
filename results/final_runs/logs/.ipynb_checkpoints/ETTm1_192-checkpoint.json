@@ -1,0 +1,9 @@
+{
+  "dataset": "ETTm1",
+  "pred_len": 192,
+  "best_lambda_val": 1.0,
+  "test_mse": 0.6171341146540299,
+  "test_mae": 0.5489336808617368,
+  "best_model_path": "results/lambda_search_models/ETTm1_192_1.0.pth",
+  "timestamp": "2025-07-28T01:39:57.945875"
+}

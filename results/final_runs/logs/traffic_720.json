@@ -1,0 +1,15 @@
+{
+  "dataset": "traffic",
+  "pred_len": 720,
+  "best_lambda": 2.0,
+  "test_mse": 0.705922445693164,
+  "test_mae": 0.4000147960974911,
+  "robustness": {
+    "impulse_mse": 0.705929257933739,
+    "impulse_degradation": 9.65012603938726e-06,
+    "spurious_mse": 0.7060792924598214,
+    "spurious_degradation": 0.00022218696630814806
+  },
+  "best_model_path": "results/lambda_search_models/traffic_720_2.0.pth",
+  "timestamp": "2025-07-28T02:38:19.589157"
+}

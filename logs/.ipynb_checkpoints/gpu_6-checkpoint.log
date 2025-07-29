@@ -1,0 +1,20 @@
+--- Starting experiment at 2025-07-28T01:37:06.161919 ---
+Dataset: ETTm1, Pred_Len: 336, Lambda: 0.0, Mode: test_only
+
+--- Starting Test-Only Mode ---
+Found best lambda: 0.01 with validation loss: 0.5232
+Loading model state from results/lambda_search_models/ETTm1_336_0.01.pth
+/inspire/hdd/project/ai4education/liujiayi-p-liujiayi/mpsssm/run_experiment.py:162: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(model_path_to_load, map_location=self.device)
+
+--- AN ERROR OCCURRED: 2025-07-28T01:37:06.470956 ---
+Traceback (most recent call last):
+  File "/inspire/hdd/project/ai4education/liujiayi-p-liujiayi/mpsssm/run_experiment.py", line 164, in run
+    model.load_state_dict(checkpoint['model_state_dict'])
+  File "/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py", line 2215, in load_state_dict
+    raise RuntimeError('Error(s) in loading state_dict for {}:\n\t{}'.format(
+RuntimeError: Error(s) in loading state_dict for MPSSSM:
+	size mismatch for minimality_regularizer.decoder.0.weight: copying a param with shape torch.Size([64, 128]) from checkpoint, the shape in current model is torch.Size([128, 128]).
+	size mismatch for minimality_regularizer.decoder.0.bias: copying a param with shape torch.Size([64]) from checkpoint, the shape in current model is torch.Size([128]).
+	size mismatch for minimality_regularizer.decoder.3.weight: copying a param with shape torch.Size([7, 64]) from checkpoint, the shape in current model is torch.Size([7, 128]).
+
